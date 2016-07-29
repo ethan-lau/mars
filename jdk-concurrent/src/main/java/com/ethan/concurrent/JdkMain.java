@@ -8,4 +8,8 @@ package com.ethan.concurrent;
 public class JdkMain {
 
 
+    public static void main(String[] args) {
+
+    }
+
 }
