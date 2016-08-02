@@ -3,3 +3,6 @@
 target/
 out/
 logs/
+**/file/
+*.pyc
+.DS_Store
