@@ -1,3 +1,8 @@
+#!/usr/bin/python
+# coding = utf8
+# author: Ethan Lau
+# date: 2016-08-06
+
 import urlparse
 
 

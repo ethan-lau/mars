@@ -1,11 +1,10 @@
+import os
 import unittest
 import urllib2
-import sys
-import os
 
-sys.path.append('..')
 import spider.link_finder
 import spider.general
+from spider.database.db_utils import MySqlUtils
 
 
 class TestStringMethods(unittest.TestCase):
@@ -31,3 +30,12 @@ class TestStringMethods(unittest.TestCase):
                 spider.general.write_file('file/{0}.html'.format(key), html_s)
             except Exception as e:
                 print str(e)
+
+    def test_db(self):
+        sql = MySqlUtils()
+        res = sql.query_all('select * from mars.page_reference')
+
+        for k in res:
+            for i in k:
+                print i,
+            print
