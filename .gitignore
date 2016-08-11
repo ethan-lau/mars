@@ -6,3 +6,4 @@ logs/
 **/file/
 *.pyc
 .DS_Store
+.ropeproject/
