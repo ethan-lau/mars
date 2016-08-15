@@ -1,7 +1,0 @@
-CREATE TABLE mars.page_reference
-(
-  id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  title VARCHAR(1024) DEFAULT '' NOT NULL COMMENT '文章标题',
-  file VARCHAR(512) NOT NULL COMMENT '文件保存路径',
-  `unique` VARCHAR(32) COMMENT '文章唯一标示'
-);
