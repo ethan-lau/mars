@@ -19,5 +19,5 @@ from . import views
 app_name = 'crawl'
 
 urlpatterns = [
-    url(r'^', views.IndexView.as_view(), name='index'),
+    url(r'^$', views.HomePageView.as_view(), name='home'),
 ]
