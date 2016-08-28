@@ -57,4 +57,6 @@ def page_reference(request):
         page = PageReference.objects.all()
         p = Paginator(page, 10)
         serializer = PageReferenceSerializer(p.page(1), many=True)
-        return JSONResponse(serializer.data)
+        response = JSONResponse(serializer.data)
+        response['Access-Control-Allow-Origin'] = '*'
+        return response
