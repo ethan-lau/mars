@@ -41,7 +41,7 @@ class Page extends React.Component {
     });
   }
 
-  handleToggle() { 
+  handleToggle() {
     this.setState({open: !this.state.open});
   }
 

@@ -6,13 +6,13 @@ export default class Content extends React.Component {
   render() {
     var listItems = [];
     this.props.data.forEach(function(content, index) {
-      console.log(index.title);
-      listItems.push(<ListItem key={index} primaryText={content.title} secondaryText={content.author} secondaryTextLines={1} />);
+      listItems.push(<ListItem key={index} primaryText={<a target="_blank" href={content.url}>{content.title}</a>} secondaryText={content.author} 
+        secondaryTextLines={1}></ListItem>);
     });
 
     return (
       <div>
-        <List style={{width: 600,display: 'block', marginTop: 20, marginRight: 'auto', marginBottom: 20, marginLeft: 'auto'}}>
+        <List style={{display: 'block', marginTop: 0, marginRight: 'auto', marginBottom: 0, marginLeft: 'auto'}}>
           {listItems}
         </List>
       </div>

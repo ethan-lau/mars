@@ -14,3 +14,10 @@ class OsChinaItem(scrapy.Item):
     author = scrapy.Field()
     icon = scrapy.Field()
     source = scrapy.Field()
+
+class CnblogsItem(scrapy.Item):
+    title = scrapy.Field()
+    url = scrapy.Field()
+    author = scrapy.Field()
+    icon = scrapy.Field()
+    source = scrapy.Field()

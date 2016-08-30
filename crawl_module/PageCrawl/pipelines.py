@@ -40,7 +40,7 @@ class MySQLStorePagePipeline(object):
     def _do_insert(self, conn, item, spider):
         now = datetime.utcnow().replace(microsecond=0).isoformat(' ')
         url_md5 = md5(item['url']).hexdigest()
-        conn.execute("""select 1 from page_reference where url_md5 = %s""", (url_md5,))
+        conn.execute("""select 1 from page_reference where url_md5 = %s and source = %s""", (url_md5,item['source']))
         ret = conn.fetchone()
 
         if not ret:
