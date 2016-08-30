@@ -12,3 +12,4 @@ dist/
 migrations/
 node_modules
 build
+push.sh
