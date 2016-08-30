@@ -1,10 +1,3 @@
 html {
-  /*font-family: 'Roboto', sans-serif;*/
-}
-
-body {
-  background: red;
-}
-a {
-  visted: green;
+  font-family: 'Roboto', sans-serif;
 }
