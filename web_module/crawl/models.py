@@ -30,6 +30,7 @@ class PageReference(models.Model):
     file = models.CharField(max_length=512, blank=True, default='')
     url_md5 = models.CharField(max_length=32, blank=True, default='')
     url = models.CharField(max_length=1024, blank=True, default='')
+    icon = models.CharField(max_length=512, blank=True, default='')
     source = models.CharField(max_length=512, blank=True, default='')
     author = models.CharField(max_length=128, blank=True, default='')
     update_time = models.DateTimeField(auto_now_add=True)
