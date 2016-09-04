@@ -15,10 +15,10 @@ SPIDER_MODULES = ['PageCrawl.spiders']
 NEWSPIDER_MODULE = 'PageCrawl.spiders'
 
 # start MySQL database configure setting
-MYSQL_HOST = '45.114.11.43'
-MYSQL_DBNAME = 'mars'
-MYSQL_USER = 'mars'
-MYSQL_PASSWD = 'laizheli512'
+MYSQL_HOST = 'localhost'
+MYSQL_DBNAME = 'schema_db'
+MYSQL_USER = 'user'
+MYSQL_PASSWD = 'password'
 # end of MySQL database configure setting
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
