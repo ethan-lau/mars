@@ -44,6 +44,7 @@ class PageReferenceSerializer(serializers.Serializer):
     file = serializers.CharField(required=True)
     url_md5 = serializers.CharField(required=True)
     url = serializers.CharField(required=True)
+    icon = serializers.CharField(required=True)
     source = serializers.CharField(required=True)
     author = serializers.CharField(required=True)
     update_time = serializers.DateTimeField(required=True)
@@ -56,6 +57,6 @@ class PageReferenceSerializer(serializers.Serializer):
 
     class Meta:
         model = PageReference
-        fields = ('id', 'title', 'url', 'source', 'author', 'update_time')
+        fields = ('id', 'title', 'url', 'icon', 'source', 'author', 'update_time')
 
 
