@@ -10,19 +10,19 @@
 若想使用，首先安装python环境，并推荐使用`pip`工具安装第三方依赖
 > 安装依赖包
 
-```
+```shell
 pip install -r requirements.txt
 ```
 
 > 通过以下命令可以运行开源中国的爬虫程序
 
-```
+```shell
 scrapy crawl oschina
 ```
 
 > 通过以下命令可以运行博客圆的爬虫程序
 
-```
+```shell
 scrapy crawl cnblogs
 ```
 

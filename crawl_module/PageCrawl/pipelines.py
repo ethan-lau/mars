@@ -45,8 +45,8 @@ class MySQLStorePagePipeline(object):
 
         if not ret:
             conn.execute("""
-              insert into page_reference(title, url_md5, url, source, author, update_time) values(%s,%s,%s,%s,%s,%s)
-              """, (item['title'], url_md5, item['url'], item['source'], item['author'], now))
+              insert into page_reference(title, url_md5, url, icon, source, author, update_time) values(%s,%s,%s,%s,%s,%s,%s)
+              """, (item['title'], url_md5, item['url'], item['icon'], item['source'], item['author'], now))
 
     def _handle_error(self, failure, item, spider):
         print failure, '================='

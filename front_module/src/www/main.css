@@ -1,3 +1,47 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  margin: 0px;
+}
+
+a:visited {
+  color: #888;
+}
+
+a {
+  color: #063642;
+  text-decoration: none;
+}
+
+.content-list {
+  display: 'block';
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.user-info {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  text-align: center;
+}
+
+.subject-name {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 56px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.main {
+  padding: 20px auto;
+  font-size: 60px;
+}

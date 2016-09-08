@@ -55,7 +55,9 @@ class Page extends React.Component {
             <MenuItem>Menu Item</MenuItem>
             <MenuItem>Menu Item 2</MenuItem>
           </Drawer>
-          <Content data={this.state.data} />
+          <div className="main">
+            <Content data={this.state.data} />
+          </div>
         </div>
       </MuiThemeProvider>
     );
